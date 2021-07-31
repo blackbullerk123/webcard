@@ -11,4 +11,14 @@ class FrontendController extends Controller
     {
         return view('layout_index.index');
     }
+
+    public function signUp()
+    {
+        return view('layout_index.page.signup');
+    }
+
+    public function signIn()
+    {
+        return view('layout_index.page.signin');
+    }
 }
