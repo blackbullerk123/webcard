@@ -1,57 +1,32 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
-  <meta name="author" content="themefisher.com">
-
-  <title>Novena- Health & Care Medical template</title>
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('novena/images/favicon.ico') }}" />
-
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="{{ asset('novena/plugins/bootstrap/css/bootstrap.min.css') }}">
-  <!-- Icon Font Css -->
-  <link rel="stylesheet" href="{{ asset('novena/plugins/icofont/icofont.min.css') }}">
-  <!-- Slick Slider  CSS -->
-  <link rel="stylesheet" href="{{ asset('novena/plugins/slick-carousel/slick/slick.css') }}">
-  <link rel="stylesheet" href="{{ asset('novena/plugins/slick-carousel/slick/slick-theme.css') }}">
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="{{ asset('novena/css/style.css') }}">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ asset('dev/img/favicon.png') }}">
+  <title>Sandbox</title>
+  <link rel="stylesheet" href="{{ asset('dev/css/plugins.css') }}">
+  <link rel="stylesheet" href="{{ asset('dev/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('dev/css/colors/aqua.css') }}">
+  <link rel="preload" href="{{ asset('dev/css/fonts/thicccboi.css') }}" as="style" onload="this.rel='stylesheet'">
 </head>
 
-<body id="top">
+<body>
+  <div class="content-wrapper">
     @include('layout_index.header')
     @yield('content')
     @include('layout_index.footer')
-    <!-- 
-    Essential Scripts
-    =====================================-->
 
-    
-    <!-- Main jQuery -->
-    <script src="{{ asset('novena/plugins/jquery/jquery.js') }}"></script>
-    <!-- Bootstrap 4.3.2 -->
-    <script src="{{ asset('novena/plugins/bootstrap/js/popper.js') }}"></script>
-    <script src="{{ asset('novena/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('novena/plugins/counterup/jquery.easing.js') }}"></script>
-    <!-- Slick Slider -->
-    <script src="{{ asset('novena/plugins/slick-carousel/slick/slick.min.js') }}"></script>
-    <!-- Counterup -->
-    <script src="{{ asset('novena/plugins/counterup/jquery.waypoints.min.js') }}"></script>
-    
-    <script src="{{ asset('novena/plugins/shuffle/shuffle.min.js') }}"></script>
-    <script src="{{ asset('novena/plugins/counterup/jquery.counterup.min.js') }}"></script>
-    <!-- Google Map -->
-    <script src="{{ asset('novena/plugins/google-map/map.js') }}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
-    
-    <script src="{{ asset('novena/js/script.js') }}"></script>
-    <script src="{{ asset('novena/js/contact.js') }}"></script>
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script src="{{ asset('dev/js/plugins.js') }}"></script>
+  <script src="{{ asset('dev/js/theme.js') }}"></script>
+</body>
 
-  </body>
-  </html>
-   
+</html>
