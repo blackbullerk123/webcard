@@ -22,3 +22,5 @@ Route::get('/',[FrontendController::class,'getIndex'])->name('index');
 Route::get('/sign-up',[FrontendController::class,'signUp'])->name('signup');
 //Sign In
 Route::get('/sign-in',[FrontendController::class,'signIn'])->name('signin');
+//Card
+Route::get('/card',[FrontendController::class,'getCard'])->name('card');

@@ -56,27 +56,28 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
-                    <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
-                    Dashboard
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{ route('index') }}">
+                    Trang chủ
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/profile.html">
-                    <i class="fa fa-user opacity-6 text-dark me-1"></i>
-                    Profile
+                  <a class="nav-link me-2" href="{{ route('card') }}">
+                    Mua thẻ
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link me-2" href="../pages/sign-up.html">
-                    <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
-                    Sign Up
+                    Hướng dẫn
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link me-2" href="../pages/sign-in.html">
-                    <i class="fas fa-key opacity-6 text-dark me-1"></i>
-                    Sign In
+                    Về chúng tôi
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-2" href="../pages/sign-in.html">
+                    Liên hệ
                   </a>
                 </li>
               </ul>
@@ -132,7 +133,7 @@
     </section>
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  <footer class="footer py-5">
+  {{-- <footer class="footer py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mb-4 mx-auto text-center">
@@ -183,7 +184,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> --}}
   <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
   <!--   Core JS Files   -->
   <script src="{{ asset('dashboard/assets/js/core/popper.min.js') }}"></script>
